@@ -3,15 +3,18 @@
 // Connect with the Express server
 const addRecordEndpoint = 'http://localhost:50000/postData';
 
-export default async function postRecord(location) {
+export default async function postRecord(todoItem) {
   /* Pass the POST API request from React to Express server */
   // - - - - - - - START - - - - - - - -
   const recordBodyParameters = {
-    'country': location.country,
-    'state': location.state,
-    'city': location.city
+    'name': todoItem.name,
+    'priority': Number(todoItem.priority),
+    'completed': todoItem.completed ? 'Yes': 'No'
   }
 
+  console.log(todoItem)
+  console.log(recordBodyParameters);
+  console.log(JSON.stringify(recordBodyParameters))
   const options = {
     method: 'POST',
     headers: {
