@@ -1,6 +1,6 @@
-[Kintone base taken from workshop found here](https://github.com/kintone-workshops/React-x-REST-API-Workshop/)
+#[Kintone base taken from workshop found here](https://github.com/kintone-workshops/React-x-REST-API-Workshop/)
 
-# Retrofitting Kintone (or existing workshops and sample code) to what you need
+# Retrofitting Kintone Workshop (or existing workshops and sample code) to what you need
 
 ## Update DB
 For a todo list add the following members
